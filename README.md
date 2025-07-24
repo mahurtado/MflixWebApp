@@ -31,7 +31,13 @@ This is a web application on top of the MongoDB [Sample Mflix Dataset](https://w
 git clone https://github.com/mahurtado/MflixWebApp
 cd MflixWebApp
 mvn clean package
-export MONGODB_URI="[your_mongodb_connection_string]/sample_mflix"
+export MONGODB_TYPE="[mongodb|mongodb+srv]"
+export MONGODB_USER="[your_user]"
+export MONGODB_PWD="[your_password]"
+export MONGODB_HOST="[X.X.X.X]"
+export MONGODB_PORT="[mongodb_port]"
+export MONGODB_DATABASE="[database_name]"
+export MONGODB_PARAMS="[all after ? in URL authSource=admin]"
 java -jar target/mflix-0.0.1-SNAPSHOT.jar
 ```
 
