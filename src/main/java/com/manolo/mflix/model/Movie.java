@@ -15,11 +15,11 @@ public class Movie {
 
     private String plot;
     private List<String> genres;
-    private int runtime;
+    private Integer runtime;
     private List<String> cast;
 
     @Field("num_mflix_comments") // Maps this Java field to the 'num_mflix_comments' field in MongoDB
-    private int numMflixComments;
+    private Integer numMflixComments;
 
     private String poster;
     private String title;
@@ -30,7 +30,7 @@ public class Movie {
     private List<String> writers;
     private Awards awards;
     private String lastupdated;
-    private int year;
+    private Integer year;
     private Imdb imdb;
     private String type;
     private Tomatoes tomatoes;
@@ -43,12 +43,12 @@ public class Movie {
     public void setPlot(String plot) { this.plot = plot; }
     public List<String> getGenres() { return genres; }
     public void setGenres(List<String> genres) { this.genres = genres; }
-    public int getRuntime() { return runtime; }
-    public void setRuntime(int runtime) { this.runtime = runtime; }
+    public Integer getRuntime() { return runtime; }
+    public void setRuntime(Integer runtime) { this.runtime = runtime; }
     public List<String> getCast() { return cast; }
     public void setCast(List<String> cast) { this.cast = cast; }
-    public int getNumMflixComments() { return numMflixComments; }
-    public void setNumMflixComments(int numMflixComments) { this.numMflixComments = numMflixComments; }
+    public Integer getNumMflixComments() { return numMflixComments; }
+    public void setNumMflixComments(Integer numMflixComments) { this.numMflixComments = numMflixComments; }
     public String getPoster() { return poster; }
     public void setPoster(String poster) { this.poster = poster; }
     public String getTitle() { return title; }
@@ -67,8 +67,8 @@ public class Movie {
     public void setAwards(Awards awards) { this.awards = awards; }
     public String getLastupdated() { return lastupdated; }
     public void setLastupdated(String lastupdated) { this.lastupdated = lastupdated; }
-    public int getYear() { return year; }
-    public void setYear(int year) { this.year = year; }
+    public Integer getYear() { return year; }
+    public void setYear(Integer year) { this.year = year; }
     public Imdb getImdb() { return imdb; }
     public void setImdb(Imdb imdb) { this.imdb = imdb; }
     public String getType() { return type; }

@@ -102,6 +102,7 @@ public class CommentService {
         String randomMovieId = movieIdOptional.get();
         
         // 3. Fetch the full movie object using the ID
+        System.out.println("createRandomComment > randomMovieId: " + randomMovieId);
         Optional<Movie> movieOptional = movieRepository.findById(randomMovieId);
         if(movieOptional.isEmpty()){
             // This can happen if a movie was deleted after the cache was loaded

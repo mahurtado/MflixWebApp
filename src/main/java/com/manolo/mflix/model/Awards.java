@@ -1,15 +1,15 @@
 package com.manolo.mflix.model;
 
 public class Awards {
-    private int wins;
-    private int nominations;
+    private Integer wins;
+    private Integer nominations;
     private String text;
 
     // Getters and Setters
-    public int getWins() { return wins; }
-    public void setWins(int wins) { this.wins = wins; }
-    public int getNominations() { return nominations; }
-    public void setNominations(int nominations) { this.nominations = nominations; }
+    public Integer getWins() { return wins; }
+    public void setWins(Integer wins) { this.wins = wins; }
+    public Integer getNominations() { return nominations; }
+    public void setNominations(Integer nominations) { this.nominations = nominations; }
     public String getText() { return text; }
     public void setText(String text) { this.text = text; }
 }

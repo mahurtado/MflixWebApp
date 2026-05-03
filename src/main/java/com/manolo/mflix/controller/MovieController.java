@@ -65,6 +65,7 @@ public class MovieController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
+        System.out.println("getRandomMovieFromCache > randomMovieId: " + randomIdOptional.get());
         // 2. Use the ID to fetch the movie from the repository.
         return movieRepository.findById(randomIdOptional.get())
                 .map(movie -> new ResponseEntity<>(movie, HttpStatus.OK))

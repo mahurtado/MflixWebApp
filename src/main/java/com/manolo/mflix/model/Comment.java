@@ -15,19 +15,14 @@ public class Comment {
 
     @Id
     private String id;
-
     private String name;
-
     private String email;
 
     // We map the 'movie_id' field in the database to this 'movieId' field in our Java class.
     @Field(name = "movie_id", targetType = FieldType.OBJECT_ID)
     private String movieId;
-
     private String text;
-
     private Date date;
-
 
     // --- Getters and Setters ---
 
